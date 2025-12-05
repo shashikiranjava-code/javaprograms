@@ -1,0 +1,27 @@
+package shashijavaproject;
+
+import java.util.Scanner;
+
+public class SumByAdding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the numbers:");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		int sum=0;
+		int sum1=0;
+		int sum2=0;
+		sum1=num1+num2;
+		System.out.println("sum of"+num1+"and"+num2+"is:"+sum1);
+		int num3=sc.nextInt();
+		sum2=sum1+num3;
+		System.out.println("sum of"+sum1+"and"+num3+"is:"+sum2);
+		int num4=sc.nextInt();
+		sum=sum2+num4;
+		System.out.println("sum of four numbers is:"+sum);
+		sc.close();
+	}
+
+}
