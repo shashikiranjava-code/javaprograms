@@ -1,0 +1,26 @@
+package shashijavaproject;
+
+import java.util.Scanner;
+
+public class Score {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the score:");
+		int score1=sc.nextInt();
+		int score2=sc.nextInt();
+		int score=0;
+		if(score1>score2) {
+			System.out.println("Team A won");
+		}else if(score1==score2) {
+			System.out.println("Tie the match");
+		}else if(score2>score1&&score2<score1+6){
+			System.out.println("Team B won");
+		}else {
+			System.out.println("invalid");
+		}
+		sc.close();
+	}
+
+}
