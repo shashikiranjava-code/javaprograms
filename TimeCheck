@@ -1,0 +1,26 @@
+package shashijavaproject;
+
+import java.util.Scanner;
+
+public class TimeCheck {
+	public static String printTime(int hour) {
+		if(hour>=1&&hour<=12) {
+			return "AM";
+		}else if(hour>=13&&hour<=24) {
+			return "PM";
+		}else {
+			return "invalid hour";
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter hour (1-24):");
+		int hour=sc.nextInt();
+		String result=printTime(hour);
+		System.out.println("it is="+hour+":"+result);
+		sc.close();
+	}
+
+}
