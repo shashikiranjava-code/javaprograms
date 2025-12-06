@@ -1,0 +1,28 @@
+package shashijavaproject;
+
+import java.util.Scanner;
+
+public class CricketMatch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the scores");
+		int score1=sc.nextInt();
+		int score2=sc.nextInt();
+
+		if(score1>score2)
+		{
+			System.out.println("team A won");
+		}else if(score1==score2) {
+			System.out.println("tie match");
+		}else if(score2>score1 && score2<score1+6){
+			System.out.println("team b won");
+		}else {
+			System.out.println("invalid");
+		}
+sc.close();
+
+	}
+
+}
