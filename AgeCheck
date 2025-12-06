@@ -1,0 +1,26 @@
+package shashijavaproject;
+
+import java.util.Scanner;
+
+public class AgeCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Age:");
+		int age=sc.nextInt();
+		if(age<=12) {
+			System.out.println("Kid");
+		}else if(age<=19) {
+			System.out.println("Adult");
+		}else if(age<=40) {
+			System.out.println("Youngster");
+		}else if(age<=55) {
+			System.out.println("Aged man");
+		}else {
+			System.out.println("old man");
+		}
+		sc.close();
+	}
+
+}
