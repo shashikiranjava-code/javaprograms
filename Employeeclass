@@ -1,0 +1,23 @@
+
+public class employee {
+	int id=18;
+	String name="Shashikiran";
+	double salary=188888;
+	
+	public void getSalary() {
+		System.out.println("the salary is:"+salary);
+}
+	public void getName() {
+		System.out.println("the name is:"+name);
+	}
+	public void getId() {
+		System.out.println("the id is:"+id);
+	}
+	public static void main(String []args) {
+		employee emp=new employee();
+		emp.getSalary();
+		emp.getName();
+		emp.getId();
+	}
+
+}
